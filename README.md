@@ -2,6 +2,13 @@ Introduction
 ============
 
 _Youtube-upload_ is a command line Python script that uploads videos to Youtube (it should work on any platform -GNU/Linux, BSD, OS X, Windows, ...- that runs Python) using theYoutube [APIv3](https://developers.google.com/youtube/v3/).
+Note that this is a fork of the original repository: https://github.com/tokland/youtube-upload
+This fork adds the following command line parameters:
+
+   * --ca_certs-file - lets you specify path to cacerts file
+   * --access-token - lets you specify access token directly (no need to use credentials file or such)
+   * --progress-type - define how upload progress is reported; possible values are: progress | console
+
 
 Dependencies
 ============
@@ -19,7 +26,7 @@ Install
 =======
 
 ```
-$ wget https://github.com/tokland/youtube-upload/archive/master.zip
+$ wget https://github.com/orbitvu/youtube-upload/archive/master.zip
 $ unzip master.zip
 $ cd youtube-upload-master
 $ sudo python setup.py install
